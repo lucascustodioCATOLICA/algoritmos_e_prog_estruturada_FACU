@@ -5,6 +5,7 @@ int main() {
     char nome[SIZE];
     int idade;
     char matricula[SIZE];
+    char endereco[SIZE];
     char curso[SIZE];
     int periodo;
     char disciplinas[SIZE];
@@ -21,6 +22,10 @@ int main() {
     printf("Digite a MATRICULA: ");
     fflush(stdin); // limpa o buffer do teclado
     fgets(matricula, SIZE, stdin);
+
+    printf("Digite a ENDERECO: ");
+    fflush(stdin); // limpa o buffer do teclado
+    fgets(endereco, SIZE, stdin);
 
     printf("Digite o CURSO: ");
     fflush(stdin); // limpa o buffer do teclado
@@ -43,6 +48,7 @@ int main() {
     printf("NOME: %s", nome);
     printf("IDADE: %d \n", idade);
     printf("MATRICULA: %s", matricula);
+    printf("ENDERECO: %s", endereco);
     printf("CURSO: %s", curso);
     printf("PERIODO: %d \n", periodo);
     printf("DISCIPLINAS: %s", disciplinas);
